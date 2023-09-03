@@ -1,0 +1,253 @@
+<html>
+
+<head>
+  <title>Yummy</title>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!---------------- Favicon------------ -->
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <!---------------- Website Fonts ------------ -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comfortaa&family=Nerko+One&display=swap"
+    rel="stylesheet">
+  <!-- ------------ Font Awsome Library Icon ----------- -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- ------------- Bootstrap ------------- -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- ------------- Main Style Sheet ------------- -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <!-- -----SideNav------ -->
+
+  <nav id="sideNavbar" class=" d-flex p-4">
+    <div class="navContent">
+      <ul class="list-unstyled">
+        <li id="searchLink" type="search">Search</li>
+        <li id="categoriesLink" type="categories">Categories</li>
+        <li id="areaLink" type="area">Area</li>
+        <li id="ingredientLink" type="ingredient">Ingredients</li>
+        <li id="contactstLink" type="contactUs">Contact Us</li>
+      </ul>
+    </div>
+
+    <div class="navFooter">
+      <div class="navSocialIcons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-globe"></i>
+      </div>
+      <div class="footer">
+        <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+      </div>
+    </div>
+
+    <div class="navHeader py-4 px-2 bg-white text-black text-center">
+      <img class="logo mx-auto" src="images/logo.png" alt="" srcset="">
+      <i class="fa-solid fa-align-justify fa-2x openNav "></i>
+      <div>
+        <i class="fa-solid fa-globe d-block"></i>
+        <i class="fa-solid fa-share-nodes pt-1"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section id="homeSection">
+    <div class="container">
+      <div class="row g-4 py-5" id="rowData">
+
+      </div>
+    </div>
+  </section>
+
+  <section id="details" class="itemDetails">
+<div class="container">
+  <div id="mydetails" class="row py-5">
+    <i class="fa-solid fa-xmark fa-2x closeIcon text-white text-end"></i>
+    <div class="col-md-4 pe-4">
+    <img id="mealImg" class="w-100 rounded-3" src="" alt="yummy food">
+    <h2 id="mealTitle"></h2>
+  </div>
+
+  <div class="col-md-8">
+    <h2>Instructions</h2>
+    <p id="strInstructions"></p>
+    <h3 id="strArea"></h3>
+    <h3 id="strCategory"></h3>
+    <h3>Recipes :</h3>
+    <ul id="ingredients" class="list-unstyled d-flex g-3 flex-wrap">
+      <li class="alert alert-info m-2 p-1">1 Packet Filo Pastry</li>
+      <li class="alert alert-info m-2 p-1">150g Minced Beef</li>
+      <li class="alert alert-info m-2 p-1">150g Onion</li>
+      <li class="alert alert-info m-2 p-1">40g Oil</li>
+      <li class="alert alert-info m-2 p-1">Dash Salt</li>
+      <li class="alert alert-info m-2 p-1">Dash Pepper</li>
+    </ul>
+
+    <h3>Tags :</h3>
+    <ul class="list-unstyled d-flex g-3 flex-wrap">
+
+      <li class="alert alert-danger m-2 p-1">Streetfood</li>
+      <li class="alert alert-danger m-2 p-1"> Onthego</li>
+    </ul>
+
+    <a id="srcId" target="_blank" href=""
+      class="btn btn-success">Source</a>
+    <a id="youTubeId" target="_blank" href="" class="btn btn-danger">Youtube</a>
+  </div>
+  </div>
+</div>
+
+  </section>
+
+  <section id="search">
+    <div class="container w-75">
+      <div id="searchContainer" class="row py-5 ">
+
+        <div class="col-md-6 ">
+          <input id="searchByName" class="form-control bg-transparent text-white" type="text"
+            placeholder="Search By Name">
+        </div>
+        <div class="col-md-6">
+          <input id="searchByFirstLitter"  maxlength="1" class="form-control bg-transparent text-white"
+            type="text" placeholder="Search By First Letter">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <div class="container py-5">
+      <div class="row g-4" id="catRow">
+        <!-- <div class="col-md-3 overflow-hidden ">
+          <div class="item rounded " id="${el.idCategory}">
+            <img src="images/beef.png" class="w-100 rounded " alt="yummy food">
+            <div class="itemLayer rounded text-center d-flex align-items-center justify-content-center ">
+              <div>
+                <h3 class="text-black ps-3">Burek</h3>
+                <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, atque!</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="area">
+    <div class="container py-5">
+      <div class="row g-4" id="areaRow">
+      <!-- <div class="col-md-3">
+        <div class=" areaItem rounded text-center">
+          <i class="fa-solid fa-house-laptop fa-4x"></i>
+          <h3>American</h3>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  </section>
+
+  <section id="ingredient">
+    <div class="container py-5 ">
+<div class="row g-4" id="ingRow">
+  <!-- <div class="col-md-3">
+    <div  class="ingredientsItem rounded text-center">
+      <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+      <h3>Chicken</h3>
+      <p>The chicken is a type of domesticated fowl, a subspecies of the red junglefowl (Gallus gallus). It is one
+        of</p>
+    </div>
+  </div> -->
+</div>
+    </div>
+  </section>
+
+  <section id="contactUs">
+<div class="container w-75">
+  <div class="contactForm vh-100 d-flex align-items-center justify-content-center" >
+  <div id="contactRow" class="row g-4 py-5 align-items-center justify-content-center">
+<!-- 
+    <div class="col-md-6">
+      <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+      <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+          Special characters and numbers not allowed
+      </div>
+  </div>
+
+  <div class="col-md-6">
+    <input id="emailInput" type="email" class="form-control " placeholder="Enter Your Email">
+    <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+        Email not valid *exemple@yyy.zzz
+    </div>
+</div>
+
+<div class="col-md-6">
+  <input id="phoneInput" type="text" class="form-control " placeholder="Enter Your Phone">
+  <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+      Enter valid Phone Number
+  </div>
+</div>
+
+<div class="col-md-6">
+  <input id="ageInput" type="number" class="form-control " placeholder="Enter Your Age">
+  <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+      Enter valid age
+  </div>
+</div>
+
+<div class="col-md-6">
+  <input id="passwordInput" type="password" class="form-control " placeholder="Enter Your Password">
+  <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+      Enter valid password *Minimum eight characters, at least one letter and one number:*
+  </div>
+</div>
+
+<div class="col-md-6">
+  <input id="repasswordInput" type="password" class="form-control " placeholder="Repassword">
+  <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+      Enter valid repassword 
+  </div>
+</div>
+
+<button id="submitBtn" disabled="" class="btn btn-outline-danger px-2 mt-3">Submit</button> -->
+
+  </div>
+</div>
+</div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- -----Loading------ -->
+  <div class="loading">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

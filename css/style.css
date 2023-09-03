@@ -1,0 +1,128 @@
+body{
+    background-color: #0D0D0D;
+    color: #f9f6f6 !important;
+    overflow: hidden;
+}
+
+#sideNavbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    left: -260px;
+    z-index: 999;
+    background-color: #0D0D0D;
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 0.5rem;
+    position: relative;
+    top:300px;
+}
+.navFooter{
+    position: absolute;
+    bottom: 0;
+}
+.navSocialIcons i , .navHeader i , .closeIcon , .areaItem , .ingredientsItem{
+    cursor: pointer;
+}
+.navHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    height: 100%;
+    min-width: 65px;
+    top: 0;
+    right: -65px;
+}
+.navHeader .logo{
+    width: 50px;
+}
+/* ---------Container----------- */
+.item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.item:hover .itemLayer {
+    top: 0%;
+    
+}
+.item img {
+    object-fit: cover;
+    object-position: center center;
+}
+.itemLayer{
+    background-color: rgba(255, 255, 255, 0.747);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    transition: all 0.5s;
+}
+.mainMeals{
+    display: flex;
+}
+#details{
+    display: none;
+}
+#homeSection{
+    display: block;
+}
+#search , #categories , #area , #ingredient , #contactUs {
+    display: none;
+}
+
+#search input::placeholder {
+    color: #6c757d;
+}
+#submitBtn{
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------Loading---------- */
+.loading{
+    position: fixed;
+    inset: 0;
+    z-index: 99999999;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    display: flex;
+}
+.inner-loading-screen{
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: flex;
+}
+
+
+
+
+
+
